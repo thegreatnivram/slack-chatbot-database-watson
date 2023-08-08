@@ -7,7 +7,7 @@
   "servers": [
     {
       "description": "Code Engine deployment",
-      "url": "https://skillbothope.15ubbfvtj4jn.us-east.codeengine.appdomain.cloud/",
+      "url": "https://application-cf.15ubbfvtj4jn.us-east.codeengine.appdomain.cloud/",
       "variables": {
         "appname": {
           "default": "myapp",
