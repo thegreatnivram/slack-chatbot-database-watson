@@ -1,4 +1,4 @@
-**Note:**   
+**Note:**
 Code and instructions relating to the previous version of the tutorial [Build a database-driven Slackbot](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-slack-chatbot-database-watson) are located in the [branch **cloud-functions**](https://github.com/IBM-Cloud/slack-chatbot-database-watson/tree/cloud-functions).
 
 
@@ -11,7 +11,7 @@ This repository contains the code for IBM Cloud solution tutorial [Build a datab
 # Run and test locally
 
 The app was tested with Python 3.10. You can either run the app directly or first build, then run it as container.
-Direct: 
+Direct:
 1. Install the required modules as specified in [requirements.txt](requirements.txt).
 2. Edit **.env** to configure the database connection and a secret token / API key.
 3. Run `python3 app.py`
