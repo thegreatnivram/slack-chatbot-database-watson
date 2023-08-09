@@ -151,7 +151,7 @@ class EventsOutSchema(Schema):
     pagination = Nested(PaginationSchema)
 
 # register a callback to verify the token
-@auth.verify_token  
+@auth.verify_token
 def verify_token(token):
     if token in tokens:
         return tokens[token]
