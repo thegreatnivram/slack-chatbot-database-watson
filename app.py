@@ -34,7 +34,7 @@ API_TOKEN="{{'{0}':'appuser'}}".format(os.getenv('API_TOKEN'))
 tokens=ast.literal_eval(API_TOKEN)
 
 # database URI
-DB2_URI='ibm_db_sa://sqb23276:SATaxwwIhJFj7hRQ@b1bc1829-6f45-4cd4-bef4-10cf081900bf.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud:32304/bludb?Security=SSL;'
+DB2_URI='ibm_db_sa://gsd76391:DnclMwNMeySaleEd@b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud:32716/bludb?Security=SSL'
 # optional table arguments, e.g., to set another table schema
 ENV_TABLE_ARGS=os.getenv('TABLE_ARGS')
 TABLE_ARGS=None
