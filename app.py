@@ -34,7 +34,7 @@ API_TOKEN="{{'{0}':'appuser'}}".format(os.getenv('API_TOKEN'))
 tokens=ast.literal_eval(API_TOKEN)
 
 # database URI
-DB2_URI='ibm_db_sa://gsd76391:DnclMwNMeySaleEd@b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud:32716/bludb?Security=SSL'
+DB2_URI=os.getenv('DB2_URI')
 # optional table arguments, e.g., to set another table schema
 ENV_TABLE_ARGS=os.getenv('TABLE_ARGS')
 TABLE_ARGS=None
@@ -151,7 +151,7 @@ class EventsOutSchema(Schema):
     pagination = Nested(PaginationSchema)
 
 # register a callback to verify the token
-@auth.verify_token
+@auth.verify_token  
 def verify_token(token):
     if token in tokens:
         return tokens[token]
